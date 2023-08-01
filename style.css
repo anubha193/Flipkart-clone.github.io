@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+:root{
+    --main-bg-color:#2874f0;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Roboto',sans-serif;
+    background-color: white;
+}
+header{
+    position:fixed;
+    width: 100%;
+    height: 58px;
+    background-color: var(--main-bg-color);
+    z-index: 2;
+}
+nav ul{
+    height: 58px; 
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; 
+}
+nav{
+    display: flex;
+    }
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    width: 80px;
+    padding-left: 164px;
+}
+header .login {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin: 11px 20px;
+}
+header .login button {
+    width: 122px;
+    padding: 5px 40px;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--main-bg-color);
+}
+nav ul li{
+    padding: 0 23px;
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color:white;
+    font-weight: bold;;
+}
+nav ul li a:hover{
+    font-weight: bold;
+}
+.search{
+    display: flex;
+    align-items: center;
+}
+.search input{
+    width: 30vw;
+    height: 30px;
+    border-radius: 1px;
+    margin-left: 15px; 
+}
+.section-1 {
+    width: 100%;
+    height: 112px;
+    padding: 5px 5px;
+    background-color: white;
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 16%);
+    position: relative;
+    top:60px;
+}
+.section-1-container{
+    width: 1275px;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
+.section-1-item{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.section-1-item img {
+    width: 64px;
+    height: 64px;
+}
+.image-container{
+    position: relative;
+    width: 100%;
+    height: 450px;
+    padding: 20px 0;
+    overflow-x: hidden;
+    margin-top: 50px;
+}
+.images{
+    display: flex;
+    width: 98%;
+    height: 100%;
+    position: relative;
+    margin: auto;
+}
+.slider{
+    flex: 0 0 auto;
+    margin-right: 30px;
+    position: relative;
+    border-radius: 0px;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    transition: 1s;
+    overflow: hidden;
+}
+
+.slider img{
+    width: 100%;
+    min-height: 65%;
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+}
+
+.section-4-container {
+    box-shadow: 1px 1px 5px 1px rgb(0 0 0 / 16%);
+    height: 100%;
+    margin-top: -165px;
+    height: 362px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.section-7-container {
+    box-shadow: 1px 1px 5px 1px rgb(0 0 0 / 16%);
+    height: 100%;
+    margin-top: 12px;
+    height: 362px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.section-6-container {
+    box-shadow: 1px 1px 5px 1px rgb(0 0 0 / 16%);
+    height: 100%;
+    margin-top: 12px;
+    height: 362px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.section-5-container {
+    box-shadow: 1px 1px 5px 1px rgb(0 0 0 / 16%);
+    height: 100%;
+    margin-top: 12px;
+    height: 362px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.section-4-offers {
+    width: 230px;
+    height: 100%;
+    position: relative;
+    left: 10px;
+    background-image: url('https://rukminim1.flixcart.com/fk-p-flap/278/278/image/7593e7b6640822c1.jpg?q=90');
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+.section-4-offerss{
+    width: 20vw;
+    height: 100%;
+    position: relative;
+    right: 10px;
+    background-color: blue;
+}
+.card-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.section-4-offers-viewall{
+    text-align: center;
+    margin-top: 132px;
+    width: 100%;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section-4-offers-viewall button {
+    margin-top: 24px;
+    height: 40px;
+    background-color: var(--primary-color);
+    color: white;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 20%);
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.section-4-list {
+    height: 100%;
+    width: calc(100% - 230px);
+    display: flex;
+    overflow-x: auto;
+   
+}
+.section-4-item{
+    width: 232px;
+    height: 100%;
+    padding: 0px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.section-4-item img {
+    max-width: 200px;
+    max-height: 200px;
+}
+.section-4-item-head{
+    margin-top: 16px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.section-4-item-price {
+    margin-top: 12px;
+    font-size: 16px;
+    color: #388e3c;
+}
+.section-4-item-explore{
+    opacity: 0.6;
+    margin-top: 12px;
+    font-weight: 300;
+    font-size: 12px;
+}
+.section-5-offers {
+    width: 230px;
+    height: 100%;
+    position: relative;
+    left: 10px;
+    background-image: url('https://rukminim1.flixcart.com/fk-p-flap/278/278/image/b84f1c22cce1a6a3.jpg?q=90');
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+.section-6-offers {
+    width: 230px;
+    height: 100%;
+    position: relative;
+    left: 10px;
+    background-image: url('https://rukminim1.flixcart.com/fk-p-flap/278/278/image/898b527fdf29b17a.jpg?q=90');
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+.section-7-offers {
+    width: 230px;
+    height: 100%;
+    position: relative;
+    left: 10px;
+    background-image: url('https://rukminim1.flixcart.com/fk-p-flap/278/278/image/b84f1c22cce1a6a3.jpg?q=90');
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+.section-5 {
+    margin-top: 8px ;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+.section-5 img {
+    width: 33%;
+}
+footer{
+    height: 12vh;
+    background-color: var(--main-bg-color);
+    color: white;
+}
